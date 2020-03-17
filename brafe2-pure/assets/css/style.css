@@ -65,6 +65,12 @@ body {
   margin: 0 auto;
 }
 
+.container::after, .container::before {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 /* Filter */
 .filter {
   background: #E7E4D8;
@@ -129,4 +135,56 @@ body {
 .sabor-5 {
   color: #D7A54D;
   box-shadow: 20px 0 0 0, 40px 0 0 0, 60px 0 0 0, 80px 0 0 0, 100px 0 0 0;
+}
+
+/* Products */
+.products {
+  width: 620px;
+  margin: 0 10px;
+  float: left;
+}
+
+.products h1 {
+  font-size: 3em;
+  font-weight: normal;
+}
+
+.products li {
+  width: 300px;
+  float: left;
+}
+
+.products li:nth-child(even) {
+  margin-left: 20px;
+}
+
+.products li img {
+  display: block;
+  max-width: 100%;
+  border: 3px solid #FFFFFF;
+  box-shadow: 0 0 0 3px #252525;
+  margin: 40px 3px 0 3px;
+}
+
+.products li span {
+  background: #E7E4D8;
+  padding: 10px;
+  font-size: 0.875em;
+  font-weight: bold;
+  position: relative;
+  top: -15px;
+}
+
+.products li h2 {
+  font-size: 0.875em;
+  font-weight: normal;
+}
+
+.footer {
+  background: #E7E4D8;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 1.125em;
+  line-height: 1.4em;
+  margin-top: 80px;
 }
