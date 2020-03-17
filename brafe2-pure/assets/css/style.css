@@ -58,3 +58,75 @@ body {
 .header-menu li:first-child a::before {
   content: '';
 }
+
+/* Content */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Filter */
+.filter {
+  background: #E7E4D8;
+  border: 3px solid #D6D3C8;
+  width: 300px;
+  margin: 0 10px;
+  padding: 20px;
+  float: left;
+}
+
+.filter h2 {
+  font-size: 1.25em;
+  padding: 10px 0;
+}
+
+.filter ul {
+  border-top: 3px solid #C0BEB4;
+  border-bottom: 3px solid #C0BEB4;
+  padding: 10px;
+}
+
+.filter li {
+  font-style: italic;
+  font-size: 1.125em;
+  line-height: 2;
+}
+
+.filter li::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #C0BEB4;
+  float: right;
+  margin-top: 5px;
+}
+
+.sabor {
+  overflow: hidden;
+}
+
+.sabor span {
+  text-indent: -200px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  vertical-align: middle;
+  background: currentColor;
+}
+
+.sabor-3 {
+  color: #492901;
+  box-shadow: 20px 0 0 0, 40px 0 0 0, 60px 0 0 0;
+}
+
+.sabor-4 {
+  color: #C17139;
+  box-shadow: 20px 0 0 0, 40px 0 0 0, 60px 0 0 0, 80px 0 0 0;
+}
+
+.sabor-5 {
+  color: #D7A54D;
+  box-shadow: 20px 0 0 0, 40px 0 0 0, 60px 0 0 0, 80px 0 0 0, 100px 0 0 0;
+}
